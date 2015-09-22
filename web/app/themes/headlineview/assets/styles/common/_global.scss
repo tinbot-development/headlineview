@@ -1,0 +1,93 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: $droid;
+}
+
+.nopadding {
+  padding: 0px;
+}
+
+.nomargin {
+  margin: 0px;
+}
+
+a, span {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.input-group {
+  textarea, input, input:focus {
+    outline: none !important;
+    border-radius: 0 !important;
+    box-shadow:none !important;
+  }
+
+  input {
+    height:32px;
+  }
+}
+
+
+.btn {
+  border-radius: 0px;
+  border: 0px;
+  background-color: $green;
+  color:white;
+
+  &:hover {
+    background-color: lighten($green, 10%);
+  }
+
+  &:focus, &:active, &:active:focus {
+    background-color: lighten($green, 10%);
+  }
+}
+
+.top-block {
+  min-height: 75px;
+  background-color: $light-gray;
+  padding: 0 10px;
+  margin: 0;
+
+  h2 {
+    font-size: 20px;
+  }
+  a {
+    transition: $transition;
+
+    &:hover {
+      color: rgba(0,0,0,0.6);
+      transition: $transition;
+    }
+  }
+}
+
+
+.main {
+  margin-bottom: 100px;
+}
+
+
+
+/* WooCommerce */
+
+.woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce ul.products li.product .button, .woocommerce .cart .button, .woocommerce .cart input.button {
+  background-color: $green;
+  color:white;
+
+  &:hover {
+    background-color: lighten($green, 10%);
+  }
+}
+
+.woocommerce form.login{
+  max-width: 500px;
+}
+
+
+.woocommerce table.cart td.actions .input-text {
+  width: 120px;
+  height: 32px;
+}

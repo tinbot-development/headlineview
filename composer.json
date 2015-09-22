@@ -1,0 +1,139 @@
+{
+  "name": "roots/bedrock",
+  "type": "project",
+  "license": "MIT",
+  "description": "A modern WordPress stack",
+  "homepage": "https://roots.io/bedrock/",
+  "authors": [
+    {
+      "name": "Scott Walkinshaw",
+      "email": "scott.walkinshaw@gmail.com",
+      "homepage": "https://github.com/swalkinshaw"
+    },
+    {
+      "name": "Ben Word",
+      "email": "ben@benword.com",
+      "homepage": "https://github.com/retlehs"
+    }
+  ],
+  "keywords": [
+    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
+  ],
+  "support": {
+    "issues": "https://github.com/roots/bedrock/issues",
+    "forum": "https://discourse.roots.io/category/bedrock"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.0",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "http://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NTU1Nzl8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE1LTA1LTA3IDAyOjExOjA2"
+        }
+      }
+    },
+{
+    "type": "package",
+    "package": {
+      "name": "woocommerce-tab-manager/woocommerce-tab-manager",
+      "version": "1.2.0",
+      "type": "wordpress-plugin",
+      "dist": {
+        "type": "zip",
+        "url": "http://tinbot.com.au/packages/woocommerce-tab-manager-1.2.0.zip"
+      }
+    }
+  },
+  {
+    "type": "package",
+    "package": {
+      "name": "uber-menu/uber-menu",
+      "version": "0.1.0",
+      "type": "wordpress-plugin",
+      "dist": {
+        "type": "zip",
+        "url": "http://tinbot.com.au/packages/codecanyon-154703-ubermenu-wordpress-mega-menu-plugin.zip"
+      }
+    }
+  },
+  {
+    "type": "package",
+    "package": {
+      "name": "woocommerce-dynamic-pricing/woocommerce-dynamic-pricing",
+      "version": "2.10.1",
+      "type": "wordpress-plugin",
+      "dist": {
+        "type": "zip",
+        "url": "http://tinbot.com.au/packages/woocommerce-dynamic-pricing-2.10.1.zip"
+      }
+    }
+  },
+  {
+    "type": "package",
+    "package": {
+      "name": "woocommerce-mix-match/woocommerce-mix-match",
+      "version": "1.0.2",
+      "type": "wordpress-plugin",
+      "dist": {
+        "type": "zip",
+        "url": "http://tinbot.com.au/packages/woocommerce-mix-match-1.0.2.zip"
+      }
+    }
+  },
+  {
+    "type": "package",
+    "package": {
+      "name": "woocommerce-product-bundles/woocommerce-product-bundles",
+      "version": "4.10",
+      "type": "wordpress-plugin",
+      "dist": {
+        "type": "zip",
+        "url": "http://tinbot.com.au/packages/woocommerce-product-bundles-4.10.zip"
+      }
+    }
+  },
+      {
+  "type": "package",
+  "package": {
+    "name": "gravity-forms/gravity-forms",
+    "version": "1.9.5",
+    "type": "wordpress-plugin",
+    "dist": {
+      "type": "zip",
+      "url": "http://tinbot.com.au/packages/gravityforms_1.9.5.zip"
+    }
+  }
+}
+  ],
+  "require": {
+    "php": ">=5.4",
+    "composer/installers": "~1.0.12",
+    "vlucas/phpdotenv": "^2.0.1",
+    "johnpbloch/wordpress": "4.2.2",
+    "wpackagist-plugin/simple-custom-css": "3.2",
+    "advanced-custom-fields/advanced-custom-fields-pro": "5.0",
+    "gravity-forms/gravity-forms" : "1.9.5",
+    "wpackagist-plugin/wp-smtp": "1.1.9",
+    "wpackagist-plugin/woocommerce": "2.3.13",
+    "uber-menu/uber-menu" : "0.1.0"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  }
+}

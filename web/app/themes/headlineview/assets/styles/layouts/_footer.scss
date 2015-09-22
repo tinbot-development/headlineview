@@ -1,0 +1,48 @@
+footer {
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  min-height: 50px;
+  margin-top: 25px;
+  background-color: black;
+
+  a {
+    color:white;
+    &:hover {
+      color: rgba(255,255,255,0.7);
+    }
+  }
+
+  .bottomnav {
+    margin: 0 auto;
+    padding-left: 0;
+
+    .col-sm-9 {
+      height: 30px;
+    }
+  }
+  .footer-nav {
+    padding:0;
+    list-style-type: none;
+
+    &>li {
+      display: inline-block;
+      border-right: 1px solid black;
+      padding: 0 10px;
+      line-height: 15px;
+
+      &:last-child {
+        border-right:none;
+      }
+    }
+  }
+
+  .platformb {
+    // margin: 10px 0;
+    // padding-top: 10px;
+    #heart {
+      color: red;
+    }
+  }
+}

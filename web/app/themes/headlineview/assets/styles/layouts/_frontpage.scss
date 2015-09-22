@@ -1,0 +1,25 @@
+.fp-block-one , .fp-block-two {
+  height:200px;
+  padding: 15px;
+
+  h2 {
+    color:black;
+    margin-bottom: 25px;
+  }
+
+  p {
+    margin: 25px 0;
+  }
+}
+
+
+.fp-title {
+  margin: 25px 0;
+}
+
+
+.reseller-block {
+  min-height: 80px;
+  background: $light-gray;
+  margin: 50px 0 0 0;
+}

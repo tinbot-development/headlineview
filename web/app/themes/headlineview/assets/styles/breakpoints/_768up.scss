@@ -1,0 +1,44 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+60321249
+
+******************************************************************/
+
+
+/*********************
+GENERAL STYLES
+*********************/
+
+.platformb {
+  padding-top: 15px;
+}
+
+.footer-nav {
+  &>li {
+    float:left;
+  }
+}
+
+
+.bottomnav {
+  .col-sm-9 {
+    padding-left:40px;
+    padding-top: 8px;
+  }
+}
+
+.top-block {
+   h2 {
+    font-size: 30px;
+  }
+}
