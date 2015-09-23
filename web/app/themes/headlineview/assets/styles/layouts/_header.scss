@@ -31,6 +31,7 @@ header.banner {
           text-decoration: underline;
           transition: $transition;
         }
+
       }
 
       .border-right {
@@ -62,4 +63,51 @@ header.banner {
       }
     }
   }
+}
+
+
+header {
+    .menu-top-navigation-container{
+        > ul.menu{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            > li.menu-item {
+                > a {
+                    .fa {
+                      margin-right: 5px;
+                    }
+                }
+
+            }
+        }
+    }
+  .account.hidden-xs {
+      .menu-top-navigation-container{
+        > ul.menu{
+          list-style: none;
+          margin: 0;
+          > li.menu-item {
+              border-right: 1px solid #000000;
+              border-right: 1px solid rgba(0,0,0,.1);
+              float: left;
+              > a {
+                  margin: 0 1em;
+              }
+              &:first-child {
+                a {
+                  margin-left:0;
+                }
+              }
+              &:last-child {
+                border: none;
+                a {
+                    margin-right:0;
+                }
+              }
+          }
+        }
+      }
+  }
+
 }

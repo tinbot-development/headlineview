@@ -1,23 +1,23 @@
 <header class="banner" role="banner">
   <div class="container">
 
-    <div class="account acc-mobile row visible-xs text-center">
+    <div class="account acc-mobile row visible-xs text-center test">
          <?php
-            if (has_nav_menu('secondary_navigation')) :
-               wp_nav_menu(['theme_location' => 'secondary_navigation']);
-            else:
+            if (has_nav_menu('header_top_navigation')) :
+               wp_nav_menu(['theme_location' => 'header_top_navigation']);
+            endif;
           ?>
 
-	<p>
-          <span class="phone-number border-right">03 9746 6686</span>
-          <a href="/my-account"><span class="border-right">My Account</span></a>
-          <a href="/cart">
-            <span class="fa-stack fa-lg">
-              <i class="fa fa-shopping-cart cart-icon fa-stack-1x"></i>
-            </span>
-          </a>
-        </p>
-	<?php endif;?>
+<!--	<p>-->
+<!--          <span class="phone-number border-right">03 9746 6686</span>-->
+<!--          <a href="/my-account"><span class="border-right">My Account</span></a>-->
+<!--          <a href="/cart">-->
+<!--            <span class="fa-stack fa-lg">-->
+<!--              <i class="fa fa-shopping-cart cart-icon fa-stack-1x"></i>-->
+<!--            </span>-->
+<!--          </a>-->
+<!--        </p>-->
+	<?php //endif;?>
       </div>
 
   <div class="row">
@@ -35,14 +35,19 @@
     <div class="col-sm-6">
 
       <div class="account row hidden-xs">
-        <p>
-          <span class="phone-number border-right"><i class="fa fa-phone"></i> 03 9746 6686</span>
-          <a href="/my-account"><span class="border-right"><i class="fa fa-user"></i> My Account</span></a>
-          <a href="/checkout"><span class="delivery"><i class="fa fa-check"></i> Checkout</span></a>
-          <a href="/cart">
-            
-          </a>
-        </p>
+        <?php
+        if (has_nav_menu('header_top_navigation')) :
+          wp_nav_menu(['theme_location' => 'header_top_navigation']);
+        endif;
+        ?>
+<!--        <p>-->
+<!--          <span class="phone-number border-right"><i class="fa fa-phone"></i> 03 9746 6686</span>-->
+<!--          <a href="/my-account"><span class="border-right"><i class="fa fa-user"></i> My Account</span></a>-->
+<!--          <a href="/checkout"><span class="delivery"><i class="fa fa-check"></i> Checkout</span></a>-->
+<!--          <a href="/cart">-->
+<!---->
+<!--          </a>-->
+<!--        </p>-->
       </div>
 
     <div class="row text-right hidden-xs">
