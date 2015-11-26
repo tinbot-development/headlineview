@@ -25,6 +25,16 @@ header.banner {
       font-size: 16px;
       color: black;
 
+      .menu-top-navigation-container{
+          ul.menu{
+              > li {
+                  a {
+                      color: #000000;
+                  }
+              }
+          }
+      }
+
       a {
         transition: $transition;
         &:hover {

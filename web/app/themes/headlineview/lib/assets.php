@@ -66,7 +66,7 @@ function asset_path($filename) {
 }
 
 function assets() {
-  wp_enqueue_style('sage_css', asset_path('styles/main.css'), false, null);
+  wp_enqueue_style('sage_css', asset_path('styles/main.css'), false, time());
   wp_enqueue_style('droid', '//fonts.googleapis.com/css?family=Droid+Sans:400,700' , false, null);
   wp_enqueue_style('cabin', '//fonts.googleapis.com/css?family=Cabin:400,400italic,600' , false, null);
 

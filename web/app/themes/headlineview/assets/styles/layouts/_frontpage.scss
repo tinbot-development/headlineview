@@ -23,3 +23,39 @@
   background: $light-gray;
   margin: 50px 0 0 0;
 }
+
+
+body.home {
+  header.banner {
+
+  }
+    .content {
+        main.main {
+          margin-bottom: 4em;
+          .fp-block-one, .fp-block-two{
+              margin-bottom: 5px;
+          }
+          .reseller-block {
+            border: 0!important;
+            background: 0 0!important;
+            min-height: inherit !important;
+            margin: 7px 0 15px;
+            text-align: center!important;
+            padding: 0 !important;
+              h2 {
+                margin: 0;
+                a {
+                  background: $brand-primary;
+                  color: white;
+                  padding: 10px 1em;
+                  font-size: 20px;
+                }
+              }
+          }
+          .entry-content{
+            padding-top: 1em;
+            padding-bottom: 1em;
+          }
+        }
+    }
+}

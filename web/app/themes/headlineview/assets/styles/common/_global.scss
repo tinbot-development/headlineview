@@ -17,6 +17,12 @@ a, span {
   }
 }
 
+a {
+    > * {
+        color: #000000;
+    }
+}
+
 .input-group {
   textarea, input, input:focus {
     outline: none !important;
@@ -75,11 +81,22 @@ a, span {
 
 .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce ul.products li.product .button, .woocommerce .cart .button, .woocommerce .cart input.button {
   background-color: $green;
+  border-radius: 0;
   color:white;
 
   &:hover {
     background-color: lighten($green, 10%);
   }
+}
+
+.woocommerce {
+    a.button {
+        @extend .btn;
+        @extend .btn-primary;
+        &.button.add_to_cart_button.product_type_simple {
+          width: 100%!important;
+        }
+    }
 }
 
 .woocommerce form.login{
@@ -90,4 +107,13 @@ a, span {
 .woocommerce table.cart td.actions .input-text {
   width: 120px;
   height: 32px;
+}
+
+
+.woocommerce ul.products li.product,
+.woocommerce-page ul.products li.product {
+    padding: 1em;
+    .price {
+      color: $brand-primary;
+    }
 }
