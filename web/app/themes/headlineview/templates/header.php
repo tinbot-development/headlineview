@@ -8,16 +8,6 @@
             endif;
           ?>
 
-<!--	<p>-->
-<!--          <span class="phone-number border-right">03 9746 6686</span>-->
-<!--          <a href="/my-account"><span class="border-right">My Account</span></a>-->
-<!--          <a href="/cart">-->
-<!--            <span class="fa-stack fa-lg">-->
-<!--              <i class="fa fa-shopping-cart cart-icon fa-stack-1x"></i>-->
-<!--            </span>-->
-<!--          </a>-->
-<!--        </p>-->
-	<?php //endif;?>
       </div>
 
   <div class="row">

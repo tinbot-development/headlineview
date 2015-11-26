@@ -12,7 +12,7 @@
 
     <div class="col-sm-3">
       <div class="platformb">
-        <p><a href="http://www.platformb.com.au" target="_blank">Made with <i id="heart" class="fa fa-heart"></i> by PlatformB</a></p>
+        <p><a href="http://www.platformb.com.au" target="_blank">Built by PlatformB</a></p>
       </div>
     </div>
 </footer>
